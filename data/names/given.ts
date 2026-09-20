@@ -1,12 +1,12 @@
-import { makeListTable } from "@/lib/tableBuilder";
+import { makeTable } from "@/lib/tableBuilder";
 
-export const givenNames = makeListTable({
+export const givenNames = makeTable({
   id: "names.given",
   name: "Given Names",
   category: "names",
   slug: "given",
   description:
-    "Personal first names from many invented cultures. Roll a d100 and count to the entry, or simply choose one that fits your character.",
+    "Personal first names from many invented cultures. Roll a d100 and read the name beside your number, or simply choose one that fits your character.",
   die: "d100",
   results: [
     "Aldric",

@@ -1,12 +1,12 @@
-import { makeListTable } from "@/lib/tableBuilder";
+import { makeTable } from "@/lib/tableBuilder";
 
-export const descriptors = makeListTable({
+export const descriptors = makeTable({
   id: "names.descriptors",
   name: "Descriptive Keywords",
   category: "names",
   slug: "descriptors",
   description:
-    "Adjectives to color a name, place, or mood. Roll a d100 and count to the entry, or simply choose one that fits the tone.",
+    "Adjectives to color a name, place, or mood. Roll a d100 and read the word beside your number, or simply choose one that fits the tone.",
   die: "d100",
   results: [
     "hollow",
