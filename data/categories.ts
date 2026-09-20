@@ -85,7 +85,22 @@ export const categories: Category[] = [
       "dungeons.events",
     ],
   },
-  { slug: "encounters", name: "Encounters", blurb: "Seeds and complications for any meeting.", theme: "encounters", tableIds: [] },
+  {
+    slug: "encounters",
+    name: "Encounters",
+    blurb: "Seeds and complications for any meeting.",
+    theme: "encounters",
+    tableIds: [
+      "encounters.generic",
+      "encounters.social",
+      "encounters.combat-seeds",
+      "encounters.noncombat-seeds",
+      "encounters.complications",
+      "encounters.escalation",
+      "encounters.terrain",
+      "encounters.difficulty",
+    ],
+  },
   {
     slug: "combat",
     name: "Combat",
