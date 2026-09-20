@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0e0b14;
+  --color-panel: #171226;
+  --color-plum: #241a3a;
+  --color-ivory: #f3e9d6;
+  --color-parchment: #cdbfa6;
+  --color-gold: #c9a24a;
+  --color-bronze: #8a6a2f;
+  --font-display: "Cinzel", Georgia, serif;
+  --font-body: "EB Garamond", Georgia, serif;
+}
+
+body { background: var(--color-ink); color: var(--color-ivory); }
