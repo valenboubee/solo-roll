@@ -1,8 +1,9 @@
 import type { Category, RollTable } from "./types";
 import { categories } from "@/data/categories";
 import { questTables } from "@/data/quests";
+import { wildernessTables } from "@/data/wilderness";
 
-export const allTables: RollTable[] = [...questTables];
+export const allTables: RollTable[] = [...questTables, ...wildernessTables];
 
 const byId = new Map(allTables.map((t) => [t.id, t]));
 
