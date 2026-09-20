@@ -11,8 +11,10 @@ import { encountersTables } from "@/data/encounters";
 import { eventsTables } from "@/data/events";
 import { treasureTables } from "@/data/treasure";
 import { villainsTables } from "@/data/villains";
+import { startTables } from "@/data/start";
 
 export const allTables: RollTable[] = [
+  ...startTables,
   ...questTables,
   ...wildernessTables,
   ...investigationTables,

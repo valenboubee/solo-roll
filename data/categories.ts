@@ -1,7 +1,20 @@
 import type { Category } from "@/lib/types";
 
 export const categories: Category[] = [
-  { slug: "start", name: "Start Adventure", blurb: "Begin a freeform solo adventure fast.", theme: "start", tableIds: [] },
+  {
+    slug: "start",
+    name: "Start Adventure",
+    blurb: "Begin a freeform solo adventure fast.",
+    theme: "start",
+    tableIds: [
+      "start.locations",
+      "start.situations",
+      "start.hooks",
+      "start.seeds",
+      "start.backstory",
+      "start.goals",
+    ],
+  },
   {
     slug: "quests",
     name: "Quests & Story",
