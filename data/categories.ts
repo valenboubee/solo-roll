@@ -155,7 +155,22 @@ export const categories: Category[] = [
       "npcs.relationships",
     ],
   },
-  { slug: "treasure", name: "Treasure & Magic", blurb: "Loot, relics, and strange magical effects.", theme: "treasure", tableIds: [] },
+  {
+    slug: "treasure",
+    name: "Treasure & Magic",
+    blurb: "Loot, relics, and strange magical effects.",
+    theme: "treasure",
+    tableIds: [
+      "treasure.mundane",
+      "treasure.valuables",
+      "treasure.loot",
+      "treasure.magic-concepts",
+      "treasure.magic-properties",
+      "treasure.relics",
+      "treasure.consumables",
+      "treasure.effects",
+    ],
+  },
   {
     slug: "events",
     name: "Boons, Banes & Events",
