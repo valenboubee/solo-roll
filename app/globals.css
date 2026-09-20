@@ -12,4 +12,62 @@
   --font-body: "EB Garamond", Georgia, serif;
 }
 
-body { background: var(--color-ink); color: var(--color-ivory); }
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--color-ink);
+  color: var(--color-ivory);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+h1,
+h2,
+h3,
+.display {
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
+}
+
+/* translucent reading surface */
+.panel {
+  background: color-mix(in oklab, var(--color-panel) 88%, transparent);
+  border: 1px solid color-mix(in oklab, var(--color-gold) 30%, transparent);
+  border-radius: 0.5rem;
+  backdrop-filter: blur(6px);
+}
+
+/* muted-gold small-caps eyebrow */
+.eyebrow {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.72rem;
+  color: var(--color-gold);
+}
+
+/* knotwork-style divider */
+.rule {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in oklab, var(--color-gold) 60%, transparent),
+    transparent
+  );
+}
+
+*:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
