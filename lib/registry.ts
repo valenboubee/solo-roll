@@ -5,6 +5,7 @@ import { wildernessTables } from "@/data/wilderness";
 import { investigationTables } from "@/data/investigation";
 import { npcsTables } from "@/data/npcs";
 import { dungeonsTables } from "@/data/dungeons";
+import { combatTables } from "@/data/combat";
 
 export const allTables: RollTable[] = [
   ...questTables,
@@ -12,6 +13,7 @@ export const allTables: RollTable[] = [
   ...investigationTables,
   ...npcsTables,
   ...dungeonsTables,
+  ...combatTables,
 ];
 
 const byId = new Map(allTables.map((t) => [t.id, t]));
