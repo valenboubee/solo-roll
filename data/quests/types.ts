@@ -22,4 +22,5 @@ export const questTypes: RollTable = {
     { id: "quests.types.11", range: "11", result: "Cleansing — end a curse, haunting, blight, or infestation at its source." },
     { id: "quests.types.12", range: "12", result: "Heist — infiltrate a stronghold and leave with something that was never meant to leave." },
   ],
+  relatedTableIds: ["quests.goals", "quests.sources", "quests.complications", "quests.rewards"],
 };
