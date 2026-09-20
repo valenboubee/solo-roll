@@ -1,0 +1,24 @@
+import type { Category } from "@/lib/types";
+
+export const categories: Category[] = [
+  { slug: "start", name: "Start Adventure", blurb: "Begin a freeform solo adventure fast.", theme: "start", tableIds: [] },
+  {
+    slug: "quests",
+    name: "Quests & Story",
+    blurb: "Goals, patrons, complications, twists, and the threads that tie them together.",
+    theme: "quests",
+    tableIds: ["quests.types"],
+  },
+  { slug: "wilderness", name: "World & Wilderness", blurb: "Terrain, features, travel, and wilderness encounters.", theme: "wilderness", tableIds: [] },
+  { slug: "settlements", name: "Settlements", blurb: "Build towns and cities district by district.", theme: "settlements", tableIds: [] },
+  { slug: "dungeons", name: "Dungeons", blurb: "Rooms, passages, traps, and the dark between them.", theme: "dungeons", tableIds: [] },
+  { slug: "encounters", name: "Encounters", blurb: "Seeds and complications for any meeting.", theme: "encounters", tableIds: [] },
+  { slug: "combat", name: "Combat", blurb: "In-session prompts for intent, tactics, and morale.", theme: "combat", tableIds: [] },
+  { slug: "investigation", name: "Investigation & Oracle", blurb: "Yes/no oracle, clues, keywords, and leads.", theme: "investigation", tableIds: [] },
+  { slug: "npcs", name: "NPCs", blurb: "Names, motives, secrets, and mannerisms.", theme: "npcs", tableIds: [] },
+  { slug: "treasure", name: "Treasure & Magic", blurb: "Loot, relics, and strange magical effects.", theme: "treasure", tableIds: [] },
+  { slug: "events", name: "Boons, Banes & Events", blurb: "Fortune, misfortune, and the turns of fate.", theme: "events", tableIds: [] },
+  { slug: "villains", name: "Villains & Lairs", blurb: "Motives, methods, weaknesses, and lairs.", theme: "villains", tableIds: [] },
+  { slug: "names", name: "Names & Keywords", blurb: "Names and evocative keywords for the table.", theme: "names", tableIds: [] },
+  { slug: "reference", name: "Reference", blurb: "Oracle, DCs, and the 6d12 method.", theme: "reference", tableIds: [] },
+];

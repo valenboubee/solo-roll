@@ -8,11 +8,13 @@ const EXT = new Set([".ts", ".tsx", ".css"]);
 // Truly forbidden runtime-randomization / generation patterns.
 // NOTE: Next's generateStaticParams/generateMetadata are build-time and allowed,
 // so we do NOT match a bare "generate".
+// `RollTable`/`RollTableView` are legitimate type/component names, so we do NOT
+// match a bare "rollTable". Real table-rolling needs a randomness source, which
+// the Math.random / crypto.getRandomValues patterns below already catch.
 const FORBIDDEN: RegExp[] = [
   /Math\.random/,
   /\bcrypto\.getRandomValues/,
   /\brollDice\b/i,
-  /\brollTable\b/i,
   /\bgenerateResult\b/i,
   /\bgenerateQuest\b/i,
   /\bgenerateNpc\b/i,
