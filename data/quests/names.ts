@@ -1,5 +1,6 @@
-import type { RollTable } from "@/lib/types";
+import { makeTable } from "@/lib/tableBuilder";
 
+// Exactly 100 titles so a single d100 gives each its own number (01–100).
 const titles: string[] = [
   "The Silent Bell",
   "A Debt in Ashes",
@@ -54,7 +55,6 @@ const titles: string[] = [
   "The Hunger of Greywater",
   "A Letter Never Sent",
   "The Toll of the Bone Bridge",
-  "Beneath the Amber Light",
   "The Warden's Reckoning",
   "A Crown for the Undeserving",
   "The Quiet Rebellion",
@@ -88,7 +88,6 @@ const titles: string[] = [
   "The Vault Beneath the Court",
   "Where the Road Runs Out",
   "The Physician's Last Patient",
-  "A Transom of Old Debts",
   "The Gravekeeper's Warning",
   "Nine Coins for the Ferryman",
   "The Shuttered Chapel",
@@ -98,20 +97,21 @@ const titles: string[] = [
   "The Steward's Quiet War",
   "A Harvest of Rumours",
   "The Chandler's Hidden Room",
-  "Beneath the Broken Aqueduct",
   "The Last Name on the List",
-  "A Reckoning Long Deferred",
+  "The Undertaker's Extra Grave",
+  "A Crown Passed Hand to Hand",
+  "The Night the Wells Ran Red",
+  "Where the Old Road Meets the New",
 ];
 
-export const questNames: RollTable = {
+export const questNames = makeTable({
   id: "quests.names",
   name: "Quest Names",
   category: "quests",
   slug: "names",
   description:
-    "Evocative titles to name an adventure, chapter, or session. Roll a d100 and count to the entry, or simply choose one that fits.",
+    "Evocative titles to name an adventure, chapter, or session. Roll a d100 and read the title beside your number.",
   die: "d100",
-  format: "list",
-  entries: titles.map((t, i) => ({ id: `quests.names.${i + 1}`, result: t })),
+  results: titles,
   relatedTableIds: ["quests.types", "quests.goals"],
-};
+});

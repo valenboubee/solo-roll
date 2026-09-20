@@ -1,4 +1,6 @@
 import type { RollTable } from "@/lib/types";
+import { npcRace } from "./race";
+import { npcClass } from "./class";
 import { npcOccupations } from "./occupations";
 import { npcPersonalities } from "./personalities";
 import { npcEmotions } from "./emotions";
@@ -11,6 +13,8 @@ import { npcMannerisms } from "./mannerisms";
 import { npcRelationships } from "./relationships";
 
 export const npcsTables: RollTable[] = [
+  npcRace,
+  npcClass,
   npcOccupations,
   npcPersonalities,
   npcEmotions,

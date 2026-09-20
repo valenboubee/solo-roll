@@ -16,6 +16,24 @@ export const categories: Category[] = [
     ],
   },
   {
+    slug: "character",
+    name: "Your Character",
+    blurb: "Roll up a hero of your own: ancestry, calling, background, and the sparks of personality.",
+    theme: "character",
+    tableIds: [
+      "character.race",
+      "character.class",
+      "character.background",
+      "character.motivation",
+      "character.trait",
+      "character.ideal",
+      "character.bond",
+      "character.flaw",
+      "character.quirk",
+      "character.possession",
+    ],
+  },
+  {
     slug: "quests",
     name: "Quests & Story",
     blurb: "Goals, patrons, complications, twists, and the threads that tie them together.",
@@ -153,9 +171,11 @@ export const categories: Category[] = [
   {
     slug: "npcs",
     name: "NPCs",
-    blurb: "Occupations, motives, secrets, mannerisms, and more. (Find names in Names & Keywords.)",
+    blurb: "Ancestry, occupations, motives, secrets, mannerisms, and more. (Find names in Names & Keywords.)",
     theme: "npcs",
     tableIds: [
+      "npcs.race",
+      "npcs.class",
       "npcs.occupations",
       "npcs.personalities",
       "npcs.emotions",

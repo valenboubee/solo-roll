@@ -1,6 +1,7 @@
 const THEMES: Record<string, string> = {
   home: "radial-gradient(1200px 800px at 50% -10%, #2a2140 0%, #120e1e 55%, #0b0812 100%)",
   start: "radial-gradient(1000px 700px at 30% 0%, #21283a 0%, #121722 60%, #0b0d12 100%)",
+  character: "radial-gradient(1000px 700px at 50% 0%, #1f2a3d 0%, #17182a 58%, #0c0a14 100%)",
   quests: "radial-gradient(1000px 700px at 70% 0%, #2b2036 0%, #14101f 60%, #0b0812 100%)",
   wilderness: "radial-gradient(1000px 700px at 50% 0%, #1c2a23 0%, #101a15 60%, #0a0f0c 100%)",
   settlements: "radial-gradient(1000px 700px at 50% 0%, #2c2536 0%, #171320 60%, #0b0812 100%)",
