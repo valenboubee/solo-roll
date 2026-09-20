@@ -3,11 +3,13 @@ import { categories } from "@/data/categories";
 import { questTables } from "@/data/quests";
 import { wildernessTables } from "@/data/wilderness";
 import { investigationTables } from "@/data/investigation";
+import { npcsTables } from "@/data/npcs";
 
 export const allTables: RollTable[] = [
   ...questTables,
   ...wildernessTables,
   ...investigationTables,
+  ...npcsTables,
 ];
 
 const byId = new Map(allTables.map((t) => [t.id, t]));
