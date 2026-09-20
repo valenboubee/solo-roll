@@ -218,6 +218,22 @@ export const categories: Category[] = [
       "villains.final-encounter",
     ],
   },
-  { slug: "names", name: "Names & Keywords", blurb: "Names and evocative keywords for the table.", theme: "names", tableIds: [] },
+  {
+    slug: "names",
+    name: "Names & Keywords",
+    blurb: "Names and evocative keywords for the table.",
+    theme: "names",
+    tableIds: [
+      "names.given",
+      "names.family",
+      "names.settlements",
+      "names.taverns",
+      "names.places",
+      "names.relics",
+      "names.keywords",
+      "names.descriptors",
+      "names.actions",
+    ],
+  },
   { slug: "reference", name: "Reference", blurb: "Oracle, DCs, and the 6d12 method.", theme: "reference", tableIds: [] },
 ];
