@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Header } from "@/components/Header";
 import { SearchBox } from "@/components/SearchBox";
 import { HomeShelves } from "@/components/HomeShelves";
@@ -24,9 +25,34 @@ export default function Home() {
         <Divider />
         <HomeShelves />
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {categories.map((c) => (
-            <CategoryCard key={c.slug} category={c} />
-          ))}
+          {categories
+            .filter((c) => c.slug !== "reference")
+            .map((c) => (
+              <CategoryCard key={c.slug} category={c} />
+            ))}
+        </div>
+
+        <div className="mt-6 grid gap-4 sm:grid-cols-2">
+          <Link
+            href="/6d12"
+            className="panel block p-5 text-center transition-colors hover:border-[var(--color-gold)]"
+          >
+            <div className="eyebrow">The Six-Dice Method</div>
+            <div className="display mt-1 text-2xl text-[var(--color-ivory)]">6d12 Adventure Presence</div>
+            <p className="mt-1 text-sm text-[var(--color-parchment)]">
+              Roll six dice to find what a new place holds.
+            </p>
+          </Link>
+          <Link
+            href="/reference"
+            className="panel block p-5 text-center transition-colors hover:border-[var(--color-gold)]"
+          >
+            <div className="eyebrow">Tools of the Trade</div>
+            <div className="display mt-1 text-2xl text-[var(--color-ivory)]">Reference &amp; Oracle</div>
+            <p className="mt-1 text-sm text-[var(--color-parchment)]">
+              The yes/no oracle, difficulty guides, and more.
+            </p>
+          </Link>
         </div>
       </main>
     </>
