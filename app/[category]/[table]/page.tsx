@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { SiteBackground } from "@/components/SiteBackground";
 import { Header } from "@/components/Header";
 import { SearchBox } from "@/components/SearchBox";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -37,6 +38,7 @@ export default async function TablePage({
   if (!t || !cat) notFound();
   return (
     <>
+      <SiteBackground theme={cat.theme} />
       <Header>
         <SearchBox />
       </Header>

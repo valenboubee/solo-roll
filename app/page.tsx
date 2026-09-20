@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SiteBackground } from "@/components/SiteBackground";
 import { Header } from "@/components/Header";
 import { SearchBox } from "@/components/SearchBox";
 import { HomeShelves } from "@/components/HomeShelves";
@@ -9,6 +10,7 @@ import { categories } from "@/lib/registry";
 export default function Home() {
   return (
     <>
+      <SiteBackground theme="home" />
       <Header>
         <SearchBox />
       </Header>

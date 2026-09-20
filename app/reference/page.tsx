@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SiteBackground } from "@/components/SiteBackground";
 import { Header } from "@/components/Header";
 import { SearchBox } from "@/components/SearchBox";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -39,6 +40,7 @@ export const metadata: Metadata = {
 export default function ReferencePage() {
   return (
     <>
+      <SiteBackground theme="reference" />
       <Header>
         <SearchBox />
       </Header>

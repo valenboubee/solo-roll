@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SiteBackground } from "@/components/SiteBackground";
 import { Header } from "@/components/Header";
 import { SearchBox } from "@/components/SearchBox";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -94,6 +95,7 @@ const CONTEXTS: { name: string; thresholds: number[] }[] = [
 export default function SixD12Page() {
   return (
     <>
+      <SiteBackground theme="reference" />
       <Header>
         <SearchBox />
       </Header>

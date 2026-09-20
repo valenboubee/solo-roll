@@ -1,7 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Cinzel, EB_Garamond } from "next/font/google";
-import { SiteBackground } from "@/components/SiteBackground";
 
 const cinzel = Cinzel({ subsets: ["latin"], variable: "--font-display", display: "swap" });
 const garamond = EB_Garamond({ subsets: ["latin"], variable: "--font-body", display: "swap" });
@@ -14,10 +13,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${cinzel.variable} ${garamond.variable}`}>
-      <body>
-        <SiteBackground theme="home" />
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
